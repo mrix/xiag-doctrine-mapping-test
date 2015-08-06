@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serializer>
+    <class name="Xiag\DoctrineMappingTest\Entity\ImageOffset">
+        <property name="top"
+                  type="integer"/>
+        <property name="right"
+                  type="integer"/>
+        <property name="bottom"
+                  type="integer"/>
+        <property name="left"
+                  type="integer"/>
+    </class>
+</serializer>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serializer>
+    <class name="Xiag\DoctrineMappingTest\Entity\Image">
+        <property name="id"
+                  type="string"/>
+        <property name="offset"
+                  type="Xiag\DoctrineMappingTest\Entity\ImageOffset"/>
+        <property name="files"
+                  type="array&lt;Xiag\DoctrineMappingTest\Entity\ImageFile&gt;"/>
+    </class>
+</serializer>

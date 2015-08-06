@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mongo-mapping xmlns="http://doctrine-project.org/schemas/odm/doctrine-mongo-mapping"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:schemaLocation="http://doctrine-project.org/schemas/odm/doctrine-mongo-mapping http://doctrine-project.org/schemas/odm/doctrine-mongo-mapping.xsd">
+    <document name="Xiag\DoctrineMappingTest\Entity\Image"
+              collection="XiagTestQuestionImage">
+        <field fieldName="id"
+               type="string"
+               id="true"/>
+
+        <embed-one field="offset"
+                   target-document="Xiag\DoctrineMappingTest\Entity\ImageOffset">
+            <cascade>
+                <all/>
+            </cascade>
+        </embed-one>
+        <embed-many field="files"
+                    target-document="Xiag\DoctrineMappingTest\Entity\ImageFile"
+                    strategy="set">
+            <cascade>
+                <all/>
+            </cascade>
+        </embed-many>
+    </document>
+</doctrine-mongo-mapping>
